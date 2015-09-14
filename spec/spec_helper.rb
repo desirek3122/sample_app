@@ -17,7 +17,7 @@ Spork.prefork do
 
   RSpec.configure do |config|
     
-    config.include Rails.application.routes.url_helpers
+   config.infer_spec_type_from_file_location!
 
     config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
